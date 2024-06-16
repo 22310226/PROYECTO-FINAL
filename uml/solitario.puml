@@ -1,4 +1,4 @@
-@startuml
+@startuml Solitario 
 class Prueba {
     +atributo: String
     +metodo(): void
