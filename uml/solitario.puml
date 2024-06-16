@@ -1,0 +1,6 @@
+@startuml
+class Prueba {
+    +atributo: String
+    +metodo(): void
+}
+@enduml

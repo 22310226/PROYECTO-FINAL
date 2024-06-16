@@ -17,4 +17,5 @@ El Solitario Clásico es un popular juego de cartas para un solo jugador , y la 
 - Diseñar una interfaz gráfica fácil de usar.
 
 
-#### Carpetas Utilizadas: 
+#### Carpetas Utilizadas:
+ 
