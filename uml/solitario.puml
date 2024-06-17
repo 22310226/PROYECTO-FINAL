@@ -1,6 +1,56 @@
 @startuml Solitario 
-class Prueba {
-    +atributo: String
-    +metodo(): void
+class Carta {
+    +rango: String
+    +palo: String
+    +estaBocaArriba: boolean
+    +voltear(): void
 }
+
+class Mazo {
+    -cartas: List<Carta>
+    +barajar(): void
+    +robarCarta(): Carta
+    +reiniciarMazo(): void
+}
+
+class PilaDescarte {
+    -cartas: List<Carta>
+    +añadirCarta(carta: Carta): void
+    +removerCarta(): Carta
+}
+
+class PilaTablero {
+    -cartas: List<Carta>
+    +añadirCarta(carta: Carta): void
+    +removerCarta(): Carta
+    +puedeAñadirCarta(carta: Carta): boolean
+}
+
+class PilaFundacion {
+    -cartas: List<Carta>
+    +añadirCarta(carta: Carta): void
+    +removerCarta(): Carta
+    +puedeAñadirCarta(carta: Carta): boolean
+}
+
+class SolitarioKlondike {
+    -mazo: Mazo
+    -pilaDescarte: PilaDescarte
+    -pilasTablero: List<PilaTablero>
+    -pilasFundacion: List<PilaFundacion>
+    +iniciarJuego(): void
+    +moverCartaEntrePilasTablero(desde: PilaTablero, hacia: PilaTablero): void
+    +moverCartaAFundacion(desde: PilaTablero, hacia: PilaFundacion): void
+    +robarDelMazo(): void
+}
+
+Mazo "1" -- "52" Carta
+PilaTablero "1" -- "0..52" Carta
+PilaFundacion "1" -- "0..13" Carta
+PilaDescarte "1" -- "0..52" Carta
+SolitarioKlondike "1" -- "1" Mazo
+SolitarioKlondike "1" -- "1" PilaDescarte
+SolitarioKlondike "1" -- "7" PilaTablero
+SolitarioKlondike "1" -- "4" PilaFundacion
+
 @enduml

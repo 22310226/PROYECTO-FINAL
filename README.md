@@ -16,6 +16,8 @@ El Solitario Clásico es un popular juego de cartas para un solo jugador , y la 
 <p align="justify">
 - Diseñar una interfaz gráfica fácil de usar.
 
-
+#### Integrantes:
+Adrián Fernando Rodríguez Garay 23110197
+Sofia Galilea Morales Bejarano  22310226
 #### Carpetas Utilizadas:
  
