@@ -1,6 +1,6 @@
 #include "PilaDescarte.h"
 
-void PilaDescarte::añadirCarta(const Carta& carta) {
+void PilaDescarte::anadirCarta(const Carta& carta) {
     cartas.push_back(carta);
 }
 

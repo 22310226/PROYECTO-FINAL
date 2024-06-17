@@ -9,9 +9,9 @@ private:
     std::vector<Carta> cartas;
 
 public:
-    void añadirCarta(const Carta& carta);
+    void anadirCarta(const Carta& carta);
     Carta removerCarta();
-    bool puedeAñadirCarta(const Carta& carta);
+    bool puedeAnadirCarta(const Carta& carta);
 };
 
 #endif // PILATABLERO_H

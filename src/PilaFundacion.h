@@ -1,16 +1,17 @@
-#ifndef PILADESCARTE_H
-#define PILADESCARTE_H
+#ifndef PILAFUNDACION_H
+#define PILAFUNDACION_H
 
 #include <vector>
 #include "Carta.h"
 
-class PilaDescarte {
+class PilaFundacion {
 private:
     std::vector<Carta> cartas;
 
 public:
     void anadirCarta(const Carta& carta);
     Carta removerCarta();
+    bool puedeAnadirCarta(const Carta& carta);
 };
 
-#endif // PILADESCARTE_H
+#endif // PILAFUNDACION_H
