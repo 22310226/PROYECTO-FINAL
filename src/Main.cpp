@@ -23,7 +23,7 @@ int main(){
             solitario->moverCarta(); 
             break;
         default:
-            cout<<"Opcion no reconocida"<<endl; 
+            cout<<"Saliendo del juego"<<endl; 
             break;
         }   
     }
